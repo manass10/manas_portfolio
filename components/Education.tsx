@@ -18,7 +18,7 @@ export default function Education() {
       ],
     },
     {
-      degree: "Bachelor of Science in Information Technology",
+      degree: "Bachelor of Engineering in Information Technology",
       university: "St. Francis Institute of Technology, Mumbai University",
       location: "Mumbai, India",
       period: "April 2020 - May 2024",
