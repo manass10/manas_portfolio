@@ -1,12 +1,13 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Github, LinkedinIcon, Mail, Copy, Check } from "lucide-react"
+import { Github, Linkedin, Mail, Copy, Check } from "lucide-react"
 import { useState } from "react"
 
 export default function Contact() {
   const [copied, setCopied] = useState(false)
   const email = "manassalian2310@gmail.com"
+
   const copyEmail = async () => {
     try {
       await navigator.clipboard.writeText(email)
@@ -28,7 +29,7 @@ export default function Contact() {
     {
       platform: "LinkedIn",
       value: "linkedin.com/in/manas",
-      icon: <LinkedinIcon size={20} />,
+      icon: <Linkedin size={20} />,
       link: "https://www.linkedin.com/in/manas-salian/",
     },
     {
@@ -49,7 +50,7 @@ export default function Contact() {
     },
   }
 
-  const item = {
+  const itemVariant = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0 },
   }
@@ -80,7 +81,7 @@ export default function Contact() {
         {contactInfo.map((item, index) => (
           <motion.div
             key={index}
-            variants={item}
+            variants={itemVariant}
             className="flex flex-col items-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
           >
             <div className="w-12 h-12 flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-full mb-4 text-gray-700 dark:text-gray-300">

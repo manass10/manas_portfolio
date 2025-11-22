@@ -16,12 +16,9 @@ export default function Hero() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
             Hi, I'm <span className="text-gray-700 dark:text-gray-300">Manas Salian</span>
           </h1>
-          <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400">IT Engineer & Data Analyst</h2>
+          <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400">MS CS @NEU, Software Developer</h2>
           <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-            I'm passionate about leveraging technology and data to solve complex problems and drive meaningful insights.
-            With expertise in software development, data analytics, and business intelligence, I specialize in building
-            scalable applications and creating data-driven solutions that help organizations make informed decisions and
-            optimize their operations.
+            I'm passionate about designing robust software systems and using computer science principles to solve real-world challenges. With a strong foundation in algorithms, data structures, and system design, I focus on building reliable, efficient applications that scale. I enjoy transforming complex requirements into clean, maintainable solutions and continuously improving my craft through hands-on development and emerging CS practices.
           </p>
           <div className="pt-4">
             <a

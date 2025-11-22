@@ -6,15 +6,15 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react"
 export default function Education() {
   const education = [
     {
-      degree: "Master of Science in Data Analytics",
+      degree: "Masters of Science in Computer Science",
       university: "Northeastern University",
       location: "Boston, MA",
-      period: "September 2025 - May 2027",
+      period: "January 2026 - December 2027",
       description:
-        "Pursuing advanced studies in data analytics, machine learning, and statistical modeling. Focusing on big data technologies, predictive analytics, and business intelligence solutions.",
+        "Pursuing advanced studies in fundamental computer science subjects, including algorithms, data structures, operating systems, databases, and computer networks. Focusing on strengthening theoretical foundations and applying them to modern software development.",
       courses: [
-        "Foundations of Data Analytics",
-        "Data Management and Analysis",
+        "Programming Design Paradigm",
+        "Database Management System",
       ],
     },
     {
@@ -33,6 +33,7 @@ export default function Education() {
         "Ethical Hacking",
         "JavaScript",
         "Augmented Reality Virtual Reality",
+        "Data Mining and Bussiness Intelligence"
       ],
     },
   ]

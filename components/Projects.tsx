@@ -5,7 +5,14 @@ import { Github, ExternalLink } from "lucide-react"
 import Image from "next/image"
 
 export default function Projects() {
-  const projects = [
+  const projects: Array<{
+    title: string
+    description: string
+    image: string
+    tags: string[]
+    github: string
+    demo?: string
+  }> = [
     {
       title: "Passion Beats",
       description:
@@ -105,15 +112,17 @@ export default function Projects() {
                 <Github size={18} className="mr-1" />
                 <span>Code</span>
               </a>
-              <a
-                href={project.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300"
-              >
-                <ExternalLink size={18} className="mr-1" />
-                <span>Demo</span>
-              </a>
+              {project.demo && (
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-300"
+                >
+                  <ExternalLink size={18} className="mr-1" />
+                  <span>Demo</span>
+                </a>
+              )}
             </div>
           </motion.div>
         ))}
